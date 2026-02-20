@@ -56,7 +56,7 @@ make_world :: proc(allocator: runtime.Allocator) -> World {
     
     player_count := rand.int_range(1,5)
     world.players.allocator = allocator
-    for _ in 0..< enemy_count {
+    for _ in 0..< player_count {
         player := make_player(allocator)
         world.players[player.name] = player
     }
