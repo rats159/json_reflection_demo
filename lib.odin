@@ -1,12 +1,10 @@
 package json_serializer
 
 import "base:runtime"
-import "core:encoding/json"
 import "core:fmt"
 import "core:io"
 import "core:math"
 import "core:mem"
-import "core:reflect"
 import "core:strings"
 
 @(require_results)
